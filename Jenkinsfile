@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-org/your-repo.git'
+                git url: 'https://github.com/vwagh-dev/hello-world.git'
             }
         }
         stage('Build & Test') {
