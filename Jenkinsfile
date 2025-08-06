@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/vwagh-dev/hello-world.git'
+                git branch: 'main', url: 'https://github.com/vwagh-dev/hello-world.git'
             }
         }
         stage('Build & Test') {
