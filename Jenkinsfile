@@ -19,11 +19,11 @@ pipeline {
                 }
             }
         }
-        // stage('Coverage') {
-        //     steps {
-        //         // This publishes the JaCoCo XML report found in this path!
-        //         recordCoverage tools: [jacoco(pattern: '**/target/site/jacoco/jacoco.xml')]
-        //     }
-        // }
+        stage('Coverage') {
+            steps {
+                // This publishes the JaCoCo XML report found in this path!
+                recordCoverage tools: [jacoco(pattern: '**/target/site/jacoco/jacoco.xml')]
+            }
+        }
     }
 }
