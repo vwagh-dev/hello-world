@@ -2,6 +2,11 @@ pipeline {
     agent any
     tools { maven 'M3' } // Use your configured Maven name
     stages {
+        stage('Sanity Check') {
+            steps {
+                echo "I am inside the Jenkinsfile!"
+            }
+        }
         stage('Checkout') {
             steps {
                 git url: 'https://github.com/vwagh-dev/hello-world.git'
