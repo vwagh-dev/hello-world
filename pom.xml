@@ -29,7 +29,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<plugin1.version>p1v1</plugin1.version>
-    	<plugin2.version>p2v1</plugin2.version>
+    	<plugin2.version>p2v2</plugin2.version>
     	<plugin3.version>p3v1</plugin3.version>
 	</properties>
 	<dependencies>
